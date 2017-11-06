@@ -1,16 +1,16 @@
 
 /* Background Images
 -------------------------------------------------------------------*/
-var pageTopImage = jQuery('body').data('background-image');
-var pageTopImages;
+//var pageTopImage = jQuery('body').data('background-image');
+//var pageTopImages;
 /*var  aboutImage = jQuery('#about').data('background-image');
 var  subscribeImage = jQuery('#subscribe').data('background-image');
 var  contactImage = jQuery('#contact').data('background-image');*/
 
-if (pageTopImage) {
-    pageTopImages = pageTopImage.split(";");
-    jQuery('body').css({ 'background-image':'url(' + pageTopImages[0] + ')','background-repeat':'no-repeat' });
-};
+//if (pageTopImage) {
+//    pageTopImages = pageTopImage.split(";");
+//    jQuery('body').css({ 'background-image':'url(' + pageTopImages[0] + ')','background-repeat':'no-repeat' });
+//};
 /*if (aboutImage) {  jQuery('#about').css({ 'background-image':'url(' + aboutImage + ')' }); };
 if (subscribeImage) {  jQuery('#subscribe').css({ 'background-image':'url(' + subscribeImage + ')' }); };
 if (contactImage) {  jQuery('#contact').css({ 'background-image':'url(' + contactImage + ')' }); };*/

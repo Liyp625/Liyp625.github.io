@@ -314,18 +314,61 @@ a:focus{
 	#contact-form  #email{
 		border-right:1px solid #fff;
 	}
-		#contact-form  .btn{
-	border-left:1px solid #fff;
+    #contact-form  .btn{
+	    border-left:1px solid #fff;
 	}
 }
 
 /* 9.2 - media screen and (max-width: 768px) End
 ------------------------------------------------ */
+@media screen and (max-width: 640px){
+	.pattern{
+		/*background:rgba(0,0,0,.5) url(../images/pattern.png);*/
+		padding-top:60px;
+	}
 
+    .time-box-inner {
+        width: 140px;
+        height: 140px;
+    }
+
+    .time-box {
+        width: 140px;
+        height: 140px;
+        margin: 45px auto;
+    }
+
+    .time-count-container{
+		min-height:180px;
+		margin-top:80px;
+	}
+
+    .site-title{
+        text-align:center;
+        font-size:65px;
+        font-family:'Pacifico';
+        margin:0 0 50px 0;
+        padding-bottom:30px;
+        position:relative;
+    }
+
+	body {
+        min-width: 430px;
+		background-image: url(../../images/img1-1.jpg);
+		background-repeat: no-repeat;
+	}
+}
+
+@media screen and (min-width: 641px) {
+    body {
+        background-image: url(../../images/img1.jpg);
+        background-repeat: no-repeat;
+    }
+}
 
 /* 9.3 - media screen and (max-width: 1170px)
 ------------------------------------------------ */
-@media (min-width: 1170px){
+@media screen and (min-width: 1171px){
 	.container{
 		width:830px;
 	}
