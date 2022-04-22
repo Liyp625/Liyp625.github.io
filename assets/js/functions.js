@@ -37,17 +37,17 @@ jQuery(document).ready(function($) {
     /* Window Height Resize End
     -------------------------------------------------------------------*/
 
-    var startDate = new Date();
-    startDate.setFullYear(2017,5,17);
+    var startDate = new Date(2017,5,17,0,0,0);
+    // var startDate = new Date(2017,5,17,0,0,0);
 
 	/* Time Countdown 
 	-------------------------------------------------------------------*/
 	$('#time_countdown').countDown({
         
         targetDate: {
-            'day': startDate.getDay(),
+            'year': startDate.getFullYear(),
             'month': startDate.getMonth(),
-            'year': startDate.getYear(),
+            'day': startDate.getDate(),
             'hour': 0,
             'min': 0,
             'sec': 0

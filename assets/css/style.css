@@ -219,7 +219,20 @@ a:focus{
 	        transform:rotate(-45deg);
 }
 .time-number{
-	font-size:60px;
+	font-size:45px;
+	width:100%;
+	display:inline-block;
+	font-weight:300;
+	padding-top: 15%;
+		
+	-webkit-transition:all .25s;
+	   -moz-transition:all .25s;
+	    -ms-transition:all .25s;
+	     -o-transition:all .25s;
+	        transition:all .25s;
+}
+.time-number-day{
+	font-size:45px;
 	width:100%;
 	display:inline-block;
 	font-weight:300;
@@ -236,7 +249,11 @@ a:focus{
 	display: inline-block;	
 	overflow: hidden;
 }
-
+.time-number-day .digit{
+	line-height: 60px;
+	display: inline-block;	
+	overflow: hidden;
+}
 .time-name{
 	font-size:20px;
 	text-transform:uppercase;

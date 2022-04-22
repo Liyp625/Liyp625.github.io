@@ -300,7 +300,14 @@ jQuery.extend( jQuery.easing,
 
 		if (options.targetDate)
 		{
-			targetTime = new Date(options.targetDate.month + '/' + options.targetDate.day + '/' + options.targetDate.year + ' ' + options.targetDate.hour + ':' + options.targetDate.min + ':' + options.targetDate.sec + (options.targetDate.utc ? ' UTC' : ''));
+			// targetTime = new Date(options.targetDate.month + '/' + options.targetDate.day + '/' + options.targetDate.year + ' ' + options.targetDate.hour + ':' + options.targetDate.min + ':' + options.targetDate.sec + (options.targetDate.utc ? ' UTC' : ''));
+			targetTime = new Date(
+				options.targetDate.year,
+				options.targetDate.month - 1, 
+				options.targetDate.day,
+				options.targetDate.hour,
+				options.targetDate.min,
+				options.targetDate.sec);
 		}
 		else if (options.targetOffset)
 		{
